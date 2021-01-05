@@ -1,6 +1,0 @@
-.customDatePickerWidth, 
-.customDatePickerWidth > div.react-date-picker,
-.customDatePickerWidth > div > div.react-date-picker__wrapper
-.customDatePickerWidth > div > div.react-date-picker__input-Group input {
-   width: 100%;
-}
