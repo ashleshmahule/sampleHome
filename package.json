@@ -8,6 +8,8 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "bootstrap": "^4.5.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "link": "^0.1.5",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
