@@ -583,7 +583,11 @@ function Home() {
                         </ParallaxProvider>
                     </Col>
                 </Row>
-
+                <Row style={{ marginTop: "8%", marginBottom: "5%", fontSize: "26px" }} className="justify-content-md-center">
+                    <Col>
+                        CONTACT US
+                    </Col>
+                </Row>
             </Container>
         </>
     );
