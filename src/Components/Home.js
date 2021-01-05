@@ -17,7 +17,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-
+import Form from 'react-bootstrap/Form';
 
 
 function Home() {
@@ -537,28 +537,28 @@ function Home() {
                                                         </Row>
                                                         <Row className="justify-content-md-center" >
                                                             <Col style={{ fontSize: "14px", backgroundColor: "#FFFFFF", paddingBottom: 32 }} sm={6}>
-                                                            <img alt="" src="https://static.wixstatic.com/media/a9ff3b_e630dab1211b433ba1955369e2f15c16.png/v1/fill/w_26,h_22,al_c,q_85,usm_0.66_1.00_0.01/a9ff3b_e630dab1211b433ba1955369e2f15c16.webp" style={{marginTop: "5%", marginBottom: "6%", width: "21px" ,height: "25px" ,objectFit: "contain" ,objectPosition: "center center"}} />
-                                                                <div style={{marginBottom: "15%" }}>
-                                                                    <Slider {...settings} style={{marginBottom: "8%"}}>
+                                                                <img alt="" src="https://static.wixstatic.com/media/a9ff3b_e630dab1211b433ba1955369e2f15c16.png/v1/fill/w_26,h_22,al_c,q_85,usm_0.66_1.00_0.01/a9ff3b_e630dab1211b433ba1955369e2f15c16.webp" style={{ marginTop: "5%", marginBottom: "6%", width: "21px", height: "25px", objectFit: "contain", objectPosition: "center center" }} />
+                                                                <div style={{ marginBottom: "15%" }}>
+                                                                    <Slider {...settings} style={{ marginBottom: "8%" }}>
                                                                         <div  >
                                                                             <p>
-                                                                            I'm a paragraph. 
-                                                                            Click here to add your own text and edit me. 
-                                                                            I’m a great place for you to tell a story and let your users know a little more about you.”
+                                                                                I'm a paragraph.
+                                                                                Click here to add your own text and edit me.
+                                                                                I’m a great place for you to tell a story and let your users know a little more about you.”
                                                                             </p>
                                                                         </div>
                                                                         <div>
                                                                             <p>
-                                                                            I'm a paragraph. 
-                                                                            Click here to add your own text and edit me. 
-                                                                            I’m a great place for you to tell a story and let your users know a little more about you.”
+                                                                                I'm a paragraph.
+                                                                                Click here to add your own text and edit me.
+                                                                                I’m a great place for you to tell a story and let your users know a little more about you.”
                                                                             </p>
                                                                         </div>
                                                                         <div>
                                                                             <p>
-                                                                            I'm a paragraph. 
-                                                                            Click here to add your own text and edit me. 
-                                                                            I’m a great place for you to tell a story and let your users know a little more about you.”
+                                                                                I'm a paragraph.
+                                                                                Click here to add your own text and edit me.
+                                                                                I’m a great place for you to tell a story and let your users know a little more about you.”
                                                                             </p>
                                                                         </div>
                                                                     </Slider>
@@ -583,9 +583,54 @@ function Home() {
                         </ParallaxProvider>
                     </Col>
                 </Row>
-                <Row style={{ marginTop: "8%", marginBottom: "5%", fontSize: "26px" ,backgroundColor: "#f5f5f5" }} className="justify-content-md-center">
+            </Container>
+            <Container style={{ backgroundColor: "#f5f5f5", paddingBottom: "10%" }}>
+                <Row style={{ marginTop: "8%", marginBottom: "5%", fontSize: "26px", width: "100%", paddingTop: "8%" }} className="justify-content-md-center">
                     <Col>
                         CONTACT US
+                    </Col>
+                </Row>
+                <Row>
+                    <Col sm={2}>
+                        <a href="info@mysite.com" style={{ textDecoration: "none", color: "#000000" }}><i>info@mysite.com</i></a>
+                    </Col>
+                    <Col sm={1}>
+                        <i>/</i>
+                    </Col>
+                    <Col sm={5}>
+                        <i>500 Terry Francois Street, San Francisco, CA 94158</i>
+                    </Col>
+                    <Col sm={1}>
+                        <i>/</i>
+                    </Col>
+                    <Col sm={2}>
+                        <i>Tel: 123-456-7890</i>
+                    </Col>
+                </Row>
+                <Row style={{marginTop: "6%"}} className="justify-content-md-center">
+                    <Col sm={6}>
+                        <Form>
+                            <Form.Row>
+                                <Form.Group as={Col} controlId="formGridName">
+                                    <Form.Control style={{ borderRadius: 0 }} type="text" placeholder="*Name" />
+                                </Form.Group>
+                                <Form.Group as={Col} controlId="formGridEmail">
+                                    <Form.Control style={{ borderRadius: 0 }} type="email" placeholder="*Email" />
+                                </Form.Group>
+                            </Form.Row>
+
+                            <Form.Group controlId="formGridSubject">
+                                <Form.Control style={{ borderRadius: 0 }} placeholder="Subject" />
+                            </Form.Group>
+
+                            <Form.Group controlId="formGridMessage">
+                                <Form.Control style={{ borderRadius: 0 }} as="textarea" placeholder="Message" />
+                            </Form.Group>
+
+                            <Button style={{ width: "100%", borderRadius: 0 }} variant="dark" type="submit">
+                                Send
+                            </Button>
+                        </Form>
                     </Col>
                 </Row>
             </Container>
